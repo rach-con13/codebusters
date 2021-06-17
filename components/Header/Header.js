@@ -1,9 +1,9 @@
 export default function Header() {
     return (
-        <header className="w-full">
-          <div className="w-10/12 py-4">
-            <h1 className="text-lg bg-white">Codebusters</h1>
-            <nav className="text-base">
+        <header className="w-full ">
+          <div  className="py-8 flex justify-between items-baseline">
+            <h1 className="text-lg font-semibold bg-white text-light">Codebusters</h1>
+            <nav className="text-base font-semibold  items-baseline text-superlight hidden sm:flex ">
              <p className="">Login</p>
              <p className="ml-4">Sign Up</p>
             </nav>
