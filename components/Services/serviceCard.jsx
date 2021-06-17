@@ -4,7 +4,7 @@ export default function ServiceCard(props) {
     
 
     return (
-      <div className="rounded-sm bg py-10 lg:py-14 mt-2 ">
+      <div className="rounded-sm bg py-10 lg:py-14  sm:mt-2 ">
         <div  className=" w-10/12 lg:w-3/4 mx-auto text-right">
             <p className="text-light text-left font-semibold">
                 Developing Websites

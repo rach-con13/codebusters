@@ -8,10 +8,11 @@ module.exports = {
       "raleway":["raleway","sans-serif"]
     },
     colors:{
-        superlight:"#D4CCFF",
+        superlight:"#f4f2ff",
         light:"#A79ED9",
         DEFAULT:"#50487A",
         dark:'#322D52',
+        darker:"#1e1b30",
         accent:"#F86767"
     }
   },
