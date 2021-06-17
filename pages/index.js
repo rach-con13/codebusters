@@ -14,9 +14,11 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Staatliches&display=swap" rel="stylesheet" />
     </Head>
     <div  className=" w-5/5 bg-dark pb-6 font-raleway">
-      <div className=" h-full w-10/12 lg:w-9/12 mx-auto">
-        <Header />
-        <Hero />
+      <div style={{background:'#110E20'}}>
+          <Header />
+          <Hero />
+        </div>
+        <div className=" h-full w-10/12 lg:w-9/12 mx-auto">
         <About />
         <Services />
         <JoinUs />
