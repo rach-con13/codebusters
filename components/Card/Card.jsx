@@ -19,7 +19,7 @@ export default function Card(props) {
             <p className="mt-2 mb-3 text-left  text-sm text-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod alors.
             </p>
-            <button  className="bg-superlight w-full  text-darker font-bold sm:w-2/4 md:w-full rounded-sm px-4 py-2 md:mt-2  md:text-sm">Learn more</button>
+            <button  className="bg w-full  text-light  font-bold sm:w-2/4 md:w-full rounded-md px-4 py-4 md:mt-2  md:text-sm">Learn more</button>
         </div>
       </div>
     )

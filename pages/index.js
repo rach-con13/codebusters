@@ -6,6 +6,7 @@ import About from "../components/About/About";
 import Testimonials from "../components/Testimonials/testimonials";
 import Banner from "../components/Banner/banner";
 import JoinUs from "../components/JoinUs/JoinUs";
+import Footer from "../components/Footer/footer";
 import wave from "../public/assets/wave.svg";
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Staatliches&display=swap" rel="stylesheet" />
     </Head>
-    <div  className=" w-5/5 bg-dark pb-6 font-raleway">
+    <div  className=" w-5/5 bg-dark pb-6 font-raleway relative">
       <div style={{background:"#1e1b30"}} className="relative" >
         <img src="/assets/wave.svg"  className="absolute transform-gpu rotate-180 top-full " />
           <Header />
@@ -25,8 +26,10 @@ export default function Home() {
         <Services />
         <JoinUs /> 
         <Testimonials />
+     
 
       </div>
+      <Footer />
     </div>
     </>
   )
