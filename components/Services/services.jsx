@@ -1,16 +1,17 @@
 import React from 'react'
-import Card from '../Card/Card'
+import ServiceCard from './serviceCard'
 
 export default function Services(props) {
     
 
     return (
-    <div  >
-        <h4 className="font-bold text-lg text-light  sm:mt-14">Our Programs</h4>
-        <div  className="grid sm:grid-cols-3 gap-8">
-            <Card img="/assets/website.png" />
-            <Card img="/assets/website.png"/>
-            <Card img="/assets/website.png" />
+    <div>
+    
+        <h4 className="text-heading sm:mt-14">Our Programs</h4>
+        <div  className="grid gap-8 sm:gap-16 sm:grid-cols-3">
+            <ServiceCard img="/assets/website.png" />
+            <ServiceCard img="/assets/website.png"/>
+            <ServiceCard img="/assets/website.png" />
         </div>
     </div>
     )

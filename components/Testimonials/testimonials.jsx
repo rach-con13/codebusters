@@ -5,8 +5,8 @@ export default function Testimonials(props) {
 
     return (
      <div>
-        <h4 className="font-bold text-lg text-light mt-16">Testimonials</h4>
-        <div className="grid sm:grid-cols-3 gap-8 pb-16">
+        <h4 className="mt-16 text-heading">Testimonials</h4>
+        <div className="grid gap-8 pb-16 sm:grid-cols-3">
             <TestimonialCard />
             <TestimonialCard />
             <TestimonialCard />

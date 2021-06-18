@@ -1,0 +1,12 @@
+.headerInner{
+    @apply flex items-baseline justify-between py-8;
+}
+.headerTitle{
+    @apply text-lg font-bold text-light;
+}
+.nav{
+    @apply items-baseline hidden  font-semibold text-superlight sm:flex
+}
+.navItem {
+    @apply px-4 py-2 transition duration-500 ease-in-out transform rounded-sm hover:bg hover:scale-110 hover:rounded-sm;
+}

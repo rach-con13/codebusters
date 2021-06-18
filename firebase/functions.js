@@ -1,16 +1,39 @@
+import Firebase from "./firebase.config";
+import Router from "next/router";
 // login user
-const createUser = (email,password) => {
-    firebase.auth().createUserWithEmailAndPassword(email,password).then((
+export const createUser = (email,password) => {
+    
+    
+    Firebase.auth().createUserWithEmailAndPassword(email,password).then((
         userCredential => {
             let user = userCredential.user;
             console.log(user);
+            return {user,error:false};
         }
     )).catch((error) => {
         let errorCode = error.code;
         let errorMessage = error.message;
+        console.log(errorMessage);
+        return {code:errorCode,message:errorMessage,error:true}
     })
+
+    Router.push('/login');
 }
 
-const loginUser = (email,password) => {
-    
+export const loginUser = (email,password) => {
+      
+    Firebase.auth().signInWithEmailAndPassword(email,password).then((
+        userCredential => {
+            let user = userCredential.user;
+            console.log(user);
+            return {user,error:false};
+        }
+    )).catch((error) => {
+        let errorCode = error.code;
+        let errorMessage = error.message;
+        console.log(errorMessage);
+        return {code:errorCode,message:errorMessage,error:true}
+    })
+
+    Router.push('/');
 }

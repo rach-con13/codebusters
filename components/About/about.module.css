@@ -1,0 +1,6 @@
+.aboutSection{
+    @apply block py-10 mx-auto mt-16 rounded-md sm:mt-32;
+}
+.sectionBody{
+    @apply mt-4 text-sm font-medium leading-relaxed text-light;
+}

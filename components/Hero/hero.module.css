@@ -1,0 +1,9 @@
+.flexContainer{
+    @apply flex flex-col items-center justify-center sm:flex-row sm:gap-7;
+}
+.heroTitle{
+    @apply text-4xl font-bold text-center sm:text-left sm:text-5xl text-superlight font-staatliches;
+}
+.heroSubtitle{
+    @apply pt-1 text-lg font-semibold text-center text-light sm:text-left;
+}

@@ -1,17 +1,17 @@
-
+import styles from "./hero.module.css";
 export default function Hero() {
     return (
         
-        <div  className=" flex flex-col items-center justify-center w-11/12 mx-auto py-10  sm:gap-7 sm:flex-row ">
+        <div  className={`w-11/12 py-10 mx-auto ${styles.flexContainer} `}>
           
-            <img className="w-4/12 sm:w-3/12  pb-10" src="/assets/ghost.png" alt="wavy ghost" /> 
-            <div className="sm:ml-10 text-right">
-             <h2 className=" text-center sm:text-left text-4xl sm:text-5xl flex-1 text-superlight font-bold font-staatliches">Code<span className="text-accent">Busters</span></h2>
-             <p className="text-lg text-light font-semibold text-center sm:text-left  pt-1">Learn to code and start your career</p>
-            <form   className="sm:flex text-center  items-baseline mt-6   ">
+            <img className="w-4/12 pb-10 sm:w-3/12" src="/assets/ghost.png" alt="wavy ghost" /> 
+            <div className="text-right sm:ml-10">
+             <h2 className={styles.heroTitle}>Code<span className="text-accent">Busters</span></h2>
+             <p className={styles.heroSubtitle}>Learn to code and start your career</p>
+            <form   className="items-baseline mt-6 text-center sm:flex ">
 
-            <input className=" w-3/4 sm:w-auto  border-none ml-2 bg-dark px-5 py-2 " placeholder="Email " />
-            <button type='submit' className="  bg-gradient-to-r from to-dark mt-3 text-superlight rounded-sm font-bold px-5 py-2">
+            <input className="inputField sm:w-auto " placeholder="Email " />
+            <button type='submit' className="formButton">
                 Join Mailing List
             </button>
             </form>

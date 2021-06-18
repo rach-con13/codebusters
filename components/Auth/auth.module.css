@@ -1,0 +1,6 @@
+.fixedContainer{
+    @apply fixed top-0 left-0 w-full h-screen bg-darker;
+}
+.absoluteContainer {
+    @apply absolute w-4/12;
+}
