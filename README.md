@@ -1,16 +1,16 @@
-# Next.js + Tailwind CSS Example
+# Code Busters
 
-## Preview
+View the live website at https://codebusters-sand.vercel.app/
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Firebase setup
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+This project uses firebase for user authentication. It currently has the ability to create and signup/sign out users. Once a user is signed in, their email is displayed on the navigation. 
 
-## Deploy your own
+You can find the code related to firebase under the Firebase directory.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Styling
+In order to maintain readability, this project uses a combination of tailwind css, css modules and css. Long chains of tailwind classes are placed in css modules using @apply, while global tailwind class chains are placed in a global.css file. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
 ## How to use
 
@@ -21,5 +21,3 @@ npx create-next-app --example with-tailwindcss with-tailwindcss-app
 # or
 yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
