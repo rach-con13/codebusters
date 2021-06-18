@@ -1,6 +1,7 @@
 
 import React, { useState,useEffect } from "react";
 import Firebase from "../../firebase/firebase.config"
+
 import Link from "next/link";
 import styles from "./header.module.css";
 
