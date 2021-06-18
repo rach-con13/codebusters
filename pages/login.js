@@ -9,6 +9,7 @@ import { loginUser } from "../firebase/functions";
 
 export default function Login() {
 
+    // use formik to retrieve values from form
     const formik = useFormik({
         initialValues:{
             email:"",
@@ -16,12 +17,11 @@ export default function Login() {
         },
         onSubmit:values => {
             let newUser = loginUser(values.email,values.password);
-            console.log(newUser);
             formik.resetForm();
         }
     })
     
-
+    // pass down field object to auth form
     const loginFields = [{
         name:'email',
         label:'Email',

@@ -1,9 +1,9 @@
 import Firebase from "./firebase.config";
 import Router from "next/router";
-// login user
+
+// firebase helper functions
+
 export const createUser = (email,password) => {
-    
-    
     Firebase.auth().createUserWithEmailAndPassword(email,password).then((
         userCredential => {
             let user = userCredential.user;
@@ -17,7 +17,7 @@ export const createUser = (email,password) => {
         return {code:errorCode,message:errorMessage,error:true}
     })
 
-    Router.push('/login');
+    Router.push('/'); 
 }
 
 export const loginUser = (email,password) => {

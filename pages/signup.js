@@ -12,7 +12,6 @@ export default function SignUp() {
         initialValues:{
             email:"",
             password:"",
-            confirmPass:""
         },
         onSubmit:values => {
             let newUser = createUser(values.email,values.password);
